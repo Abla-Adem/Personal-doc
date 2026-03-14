@@ -1,1 +1,0 @@
-<span class="title-link">[[<% tp.file.selection() %>]] </span>

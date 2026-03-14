@@ -1,1 +1,0 @@
-Appuie sur **`Alt + E`** (c'est le raccourci par défaut pour insérer un template).
