@@ -21,6 +21,8 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          submodules: true  # <--- Important pour le dossier content
+          token: ${{ secrets.GITHUB_TOKEN }} # <--- Utilise la clé interne de ton compte
       - name: Setup Quartz
         uses: actions/setup-node@v4
         with:
@@ -44,4 +46,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-        
