@@ -22,7 +22,7 @@ jobs:
         with:
           fetch-depth: 0
           submodules: true  # <--- Important pour le dossier content
-          token: ${{ secrets.GITHUB_TOKEN }} # <--- Utilise la clé interne de ton compte
+          token: ${{ secrets.GH_PAT }} # <--- Utilise la clé interne de ton compte
       - name: Setup Quartz
         uses: actions/setup-node@v4
         with:
