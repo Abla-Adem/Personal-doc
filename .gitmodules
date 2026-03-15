@@ -1,0 +1,3 @@
+[submodule "content"]
+	path = content
+	url = https://github.com/Abla-Adem/sync-personal-doc.git

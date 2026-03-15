@@ -1,1 +1,0 @@
-<span class="code-clickable">[[<% tp.file.selection() %>]]</span>
