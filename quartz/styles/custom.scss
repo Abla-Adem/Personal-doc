@@ -1,15 +1,9 @@
 @use "./base.scss";
 
 // put your custom CSS here!
-/* Nettoyer l'en-tête de la page d'accueil (index) */
-[data-slug="index"] {
-    /* Cache le fil d'Ariane ("Home") */
-    .breadcrumb-container {
-      display: none;
-    }
-    
-    /* Cache la date et le temps de lecture */
-    .content-meta {
-      display: none;
-    }
-  }
+/* Cacher le fil d'Ariane et la date UNIQUEMENT sur la page d'accueil */
+.is-home .breadcrumbs,
+.is-home .breadcrumb-container,
+.is-home .content-meta {
+  display: none !important;
+}
