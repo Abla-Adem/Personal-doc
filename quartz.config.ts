@@ -8,7 +8,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Doc technique",
+    pageTitle: "abla.adem",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
@@ -23,9 +23,9 @@ const config: QuartzConfig = {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Schibsted Grotesk",
-        body: "Source Sans Pro",
-        code: "IBM Plex Mono",
+        header: "Inter",
+        body: "Inter",
+        code: "Fira Code",
       },
       colors: {
         lightMode: {
@@ -40,15 +40,15 @@ const config: QuartzConfig = {
           textHighlight: "#fff23688",
         },
         darkMode: {
-          light: "#161618",
-          lightgray: "#393639",
-          gray: "#646464",
+          light: "#1a1a1a", // Légèrement modifié pour un gris très profond (fond du site)
+          lightgray: "#2e2e2e", // Lignes séparatrices plus neutres
+          gray: "#8b8b8b", // Éclairci un peu pour que les dates soient bien lisibles
           darkgray: "#d4d4d4",
-          dark: "#ebebec",
-          secondary: "#7b97aa",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#b3aa0288",
+          dark: "#ffffff", // Mis en blanc pur pour les gros titres
+          secondary: "#8FBC8F", // <-- C'est LA couleur verte pour les Recent Notes
+          tertiary: "#556b2f", // <-- Vert plus sombre quand on passe la souris dessus
+          highlight: "rgba(143, 188, 143, 0.15)", // <-- Fond transparent vert
+          textHighlight: "#b3aa0288", // Vous pouvez garder le jaune pour les textes surlignés
         },
       },
     },
