@@ -28,7 +28,11 @@ export const defaultContentPageLayout: PageLayout = {
     Component.Search(),
     Component.Darkmode(),
     // L'AJOUT DES RECENT NOTES EST ICI :
-    Component.DesktopOnly(Component.RecentNotes({ title: "Recent Notes", limit: 4 })),
+    Component.DesktopOnly(Component.RecentNotes({ 
+      title: "Recent Notes", 
+      limit: 4,
+      showTags: false // <-- C'est ça qui va nettoyer votre menu !
+    })),
     Component.DesktopOnly(Component.Explorer()),
   ],
   right: [
